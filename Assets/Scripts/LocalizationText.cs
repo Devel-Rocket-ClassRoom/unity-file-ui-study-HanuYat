@@ -17,7 +17,7 @@ public class LocalizationText : MonoBehaviour
         if (Application.isPlaying)
         {
             Variables.OnLanguageChanged += OnChangedLang;
-            OnChangedLang();
+            //OnChangedLang();
         }
 #if UNITY_EDITOR
         else
@@ -48,7 +48,7 @@ public class LocalizationText : MonoBehaviour
     }
 
 #if UNITY_EDITOR
-    private void OnChangedLang(Languages lang)
+    public void OnChangedLang(Languages lang)
     {
         var stringTable = DataTableManager.GetStringTable(lang);
         text.text = stringTable.Get(id);

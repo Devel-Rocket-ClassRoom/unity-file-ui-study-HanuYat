@@ -21,7 +21,7 @@ public class ChangeLanguage : MonoBehaviour
         foreach (var text in texts)
         {
             text.editorLang = Languages.Korean;
-            Variables.OnLanguageChanged += text.OnChangedLang;
+            text.OnChangedLang(Languages.Korean);
         }
     }
 #endif
@@ -33,7 +33,7 @@ public class ChangeLanguage : MonoBehaviour
         foreach (var text in texts)
         {
             text.editorLang = Languages.Japanese;
-            Variables.OnLanguageChanged += text.OnChangedLang;
+            text.OnChangedLang(Languages.Japanese);
         }
     }
 #endif
@@ -46,7 +46,7 @@ public class ChangeLanguage : MonoBehaviour
         foreach (var text in texts)
         {
             text.editorLang = Languages.English;
-            Variables.OnLanguageChanged += text.OnChangedLang;
+            text.OnChangedLang(Languages.English);
         }
     }
 #endif
