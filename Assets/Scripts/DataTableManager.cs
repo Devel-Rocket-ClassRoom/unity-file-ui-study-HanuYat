@@ -7,6 +7,8 @@ public static class DataTableManager
 
     public static StringTable StringTable => Get<StringTable>(DataTableIds.String);
 
+    public static ItemTable ItemTable => Get<ItemTable>(DataTableIds.Item);
+
 #if UNITY_EDITOR
     public static StringTable GetStringTable(Languages lang)
     {
@@ -33,6 +35,10 @@ public static class DataTableManager
             tables.Add(id, stringTable);
         }
 #endif
+
+        var itemTable = new ItemTable();
+        itemTable.Load(DataTableIds.Item);
+        tables.Add(DataTableIds.Item, itemTable);
     }
 
     public static void ChangeLanguage(Languages lang)
