@@ -1,4 +1,5 @@
 ﻿Id,String
+,
 HELLO,Hello~
 BYE,Bye~
 YOU DIE,You Die...
@@ -10,3 +11,43 @@ Item1Desc,This is a sword.
 Item2Desc,This is a shield.
 Item3Desc,This is a bow.
 Item4Desc,This is a potion.
+Char1Name,Hero
+Char2Name,Wizard
+Char3Name,Thief
+Char4Name,Warrior
+Char5Name,Cleric
+Char1Desc,This Character is Hero.
+Char2Desc,This Character is Wizard.
+Char3Desc,This Character is Thief.
+Char4Desc,This Character is Warrior.
+Char5Desc,This Character is Cleric.
+Char1Attack,50
+Char2Attack,30
+Char3Attack,25
+Char4Attack,50
+Char5Attack,15
+Char1Defence,30
+Char2Defence,45
+Char3Defence,60
+Char4Defence,25
+Char5Defence,80
+Char1NameLabel,Name
+Char2NameLabel,Name
+Char3NameLabel,Name
+Char4NameLabel,Name
+Char5NameLabel,Name
+Char1DescLabel,Desc
+Char2DescLabel,Desc
+Char3DescLabel,Desc
+Char4DescLabel,Desc
+Char5DescLabel,Desc
+Char1AttackLabel,Attack
+Char2AttackLabel,Attack
+Char3AttackLabel,Attack
+Char4AttackLabel,Attack
+Char5AttackLabel,Attack
+Char1DefenceLabel,Defence
+Char2DefenceLabel,Defence
+Char3DefenceLabel,Defence
+Char4DefenceLabel,Defence
+Char5DefenceLabel,Defence

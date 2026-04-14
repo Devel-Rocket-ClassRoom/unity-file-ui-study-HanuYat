@@ -1,4 +1,5 @@
 ﻿Id,String
+,
 HELLO,안녕
 BYE,잘가
 YOU DIE,너 죽음
@@ -10,3 +11,43 @@ Item1Desc,이것은 검이다.
 Item2Desc,이것은 방패다.
 Item3Desc,이것은 활이다.
 Item4Desc,이것은 물약이다.
+Char1Name,용사
+Char2Name,마법사
+Char3Name,도적
+Char4Name,전사
+Char5Name,성직자
+Char1Desc,이 캐릭터는 용사이다.
+Char2Desc,이 캐릭터는 마법사이다.
+Char3Desc,이 캐릭터는 도적이다.
+Char4Desc,이 캐릭터는 전사이다.
+Char5Desc,이 캐릭터는 성직자이다.
+Char1Attack,50
+Char2Attack,30
+Char3Attack,25
+Char4Attack,50
+Char5Attack,15
+Char1Defence,30
+Char2Defence,45
+Char3Defence,60
+Char4Defence,25
+Char5Defence,80
+Char1NameLabel,이름
+Char2NameLabel,이름
+Char3NameLabel,이름
+Char4NameLabel,이름
+Char5NameLabel,이름
+Char1DescLabel,설명
+Char2DescLabel,설명
+Char3DescLabel,설명
+Char4DescLabel,설명
+Char5DescLabel,설명
+Char1AttackLabel,공격력
+Char2AttackLabel,공격력
+Char3AttackLabel,공격력
+Char4AttackLabel,공격력
+Char5AttackLabel,공격력
+Char1DefenceLabel,방어력
+Char2DefenceLabel,방어력
+Char3DefenceLabel,방어력
+Char4DefenceLabel,방어력
+Char5DefenceLabel,방어력

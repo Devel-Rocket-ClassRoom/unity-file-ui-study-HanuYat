@@ -3,51 +3,24 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class ChangeLanguage : MonoBehaviour
 {
-#if UNITY_EDITOR
-    private LocalizationText[] texts;
-#endif
+    public LocalizationText text;
 
-#if UNITY_EDITOR
-    private void Update()
+    public void OnChangeKorean()
     {
-        texts = GetComponentsInChildren<LocalizationText>();
+        text.editorLang = Languages.Korean;
+        text.OnChangedLang(Languages.Korean);
     }
-#endif
 
-#if UNITY_EDITOR
-    [ContextMenu("OnChangeKorean")]
-    private void OnChangeKorean()
+    public void OnChangeJapanese()
     {
-        foreach (var text in texts)
-        {
-            text.editorLang = Languages.Korean;
-            text.OnChangedLang(Languages.Korean);
-        }
+        text.editorLang = Languages.Japanese;
+        text.OnChangedLang(Languages.Japanese);
     }
-#endif
 
-#if UNITY_EDITOR
-    [ContextMenu("OnChangeJapanese")]
-    private void OnChangeJapanese()
+
+    public void OnChangeEnglish()
     {
-        foreach (var text in texts)
-        {
-            text.editorLang = Languages.Japanese;
-            text.OnChangedLang(Languages.Japanese);
-        }
+        text.editorLang = Languages.English;
+        text.OnChangedLang(Languages.English);
     }
-#endif
-
-
-#if UNITY_EDITOR
-    [ContextMenu("OnChangeEnglish")]
-    private void OnChangeEnglish()
-    {
-        foreach (var text in texts)
-        {
-            text.editorLang = Languages.English;
-            text.OnChangedLang(Languages.English);
-        }
-    }
-#endif
 }
