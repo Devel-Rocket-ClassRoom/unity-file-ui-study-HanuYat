@@ -7,7 +7,7 @@ public class Vector3Converter : JsonConverter<Vector3>
 {
     public override Vector3 ReadJson(JsonReader reader, Type objectType, Vector3 existingValue, bool hasExistingValue, JsonSerializer serializer)
     {
-        Vector3 v = Vector3.zero;
+        var v = Vector3.zero;
 
         var jObj = JObject.Load(reader);
         v.x = (float)jObj["X"];
