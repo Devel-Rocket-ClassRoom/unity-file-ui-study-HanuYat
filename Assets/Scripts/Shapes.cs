@@ -61,6 +61,8 @@ public class Shapes : MonoBehaviour
 
         var json = JsonConvert.SerializeObject(saveList, settings);
         File.WriteAllText(fullPath, json);
+
+        Debug.Log("저장됨.");
     }
 
     public void OnClickLoad()
@@ -75,14 +77,18 @@ public class Shapes : MonoBehaviour
             var jsonTestObj = Instantiate(prefab);
             jsonTestObj.Set(saveData);
         }
+
+        Debug.Log("불러옴.");
     }
 
     public void OnClickCreate()
     {
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < Random.Range(1f, 10f); i++)
         {
             CreateRandomObject();
         }
+
+        Debug.Log("생성됨.");
     }
 
     private void CreateRandomObject()
@@ -104,5 +110,7 @@ public class Shapes : MonoBehaviour
         {
             Destroy(shape);
         }
+
+        Debug.Log("정리됨.");
     }
 }
