@@ -1,5 +1,5 @@
 using UnityEngine;
-using SaveDataVC = SaveDataV3;
+using SaveDataVC = SaveDataV4;
 
 public class SaveLoadTest1 : MonoBehaviour
 {
@@ -10,10 +10,6 @@ public class SaveLoadTest1 : MonoBehaviour
             SaveLoadManager.Data = new SaveDataVC();
             SaveLoadManager.Data.Name = "Hero";
             SaveLoadManager.Data.Gold = 1500;
-            SaveLoadManager.Data.Items.Add("Item1");
-            SaveLoadManager.Data.Items.Add("Item2");
-            SaveLoadManager.Data.Items.Add("Item3");
-            SaveLoadManager.Data.Items.Add("Item4");
             SaveLoadManager.Save();
         }
 
@@ -24,9 +20,11 @@ public class SaveLoadTest1 : MonoBehaviour
                 Debug.Log(SaveLoadManager.Data.Name);
                 Debug.Log(SaveLoadManager.Data.Gold);
 
-                foreach (var itemId in SaveLoadManager.Data.Items)
+                foreach (var saveItemData in SaveLoadManager.Data.ItemList)
                 {
-                    Debug.Log(DataTableManager.ItemTable.Get(itemId).Name);
+                    Debug.Log(saveItemData.InstanceId);
+                    Debug.Log(saveItemData.ItemData.Name);
+                    Debug.Log(saveItemData.CreationTime);
                 }
             }
             else

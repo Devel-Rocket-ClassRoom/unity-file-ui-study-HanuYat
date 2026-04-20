@@ -51,3 +51,11 @@ Char2DefenceLabel,방어력
 Char3DefenceLabel,방어력
 Char4DefenceLabel,방어력
 Char5DefenceLabel,방어력
+Name,이름
+Type,타입
+Desc,설명
+Value,가치
+Cost,가격
+Weapon,무기
+Equip,장비
+Consumable,소모품

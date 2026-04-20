@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 //Id, Type, Name, Desc, Value, Cost, Icon
 
@@ -25,6 +26,8 @@ public class ItemTable : DataTable
 {
     private readonly Dictionary<string, ItemData> table = new Dictionary<string, ItemData>();
 
+    private List<string> keyList = new List<string>();
+
     public override void Load(string fileName)
     {
         table.Clear();
@@ -44,6 +47,8 @@ public class ItemTable : DataTable
                 Debug.LogError($"아이템 아이디 중복: {item.Id}");
             }
         }
+
+        keyList = table.Keys.ToList();
     }
 
     public ItemData Get(string id)
@@ -54,5 +59,10 @@ public class ItemTable : DataTable
             return null;
         }
         return table[id];
+    }
+
+    public ItemData GetRandom()
+    {
+        return Get(keyList[Random.Range(0, keyList.Count)]);
     }
 }

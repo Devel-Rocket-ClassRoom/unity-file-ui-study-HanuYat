@@ -64,14 +64,12 @@ public class GameOverWindow : GenericWindow
         windowManager.Open(0);
     }
 
-    
-
     private void ResetStats()
     {
         for (int i = 0; i < totalStats; i++)
         {
             statsRolls[i] = Random.Range(0, 1000);
-            
+
         }
         finalScore = Random.Range(0, 10000000);
 
@@ -93,7 +91,7 @@ public class GameOverWindow : GenericWindow
             int column = i / statPerColumn;
             var labelText = statsLabels[column];
             var valueText = statsValues[column];
-            string newLine = (i % statPerColumn ==0) ? string.Empty : "\n";
+            string newLine = (i % statPerColumn == 0) ? string.Empty : "\n";
 
             labelText.text = $"{labelText.text}{newLine}Stat{i + 1}";
             valueText.text = $"{valueText.text}{newLine}{statsRolls[i]:D4}";

@@ -1,7 +1,7 @@
 using Newtonsoft.Json;
 using System.IO;
 using UnityEngine;
-using SaveDataVC = SaveDataV3;
+using SaveDataVC = SaveDataV4;
 
 public static class SaveLoadManager
 {
@@ -12,7 +12,7 @@ public static class SaveLoadManager
     }
 
     public static SaveMode Mode { get; set; } = SaveMode.Encrypted;
-    public static int SaveDataVersion { get; } = 3;
+    public static int SaveDataVersion { get; } = 4;
 
     public static byte[] Encrypted;
 

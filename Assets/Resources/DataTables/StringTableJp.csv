@@ -51,3 +51,11 @@ Char2DefenceLabel,防御力
 Char3DefenceLabel,防御力
 Char4DefenceLabel,防御力
 Char5DefenceLabel,防御力
+Name,名
+Type,タイプ
+Desc,説明
+Value,価値
+Cost,価格
+Weapon,武器
+Equip,装備
+Consumable,消耗品

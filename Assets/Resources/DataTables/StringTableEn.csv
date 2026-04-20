@@ -51,3 +51,11 @@ Char2DefenceLabel,Defence
 Char3DefenceLabel,Defence
 Char4DefenceLabel,Defence
 Char5DefenceLabel,Defence
+Name,Name
+Type,Type
+Desc,Desc
+Value,Value
+Cost,Cost
+Weapon,Weapon
+Equip,Equip
+Consumable,Consumable
