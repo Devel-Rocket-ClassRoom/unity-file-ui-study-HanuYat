@@ -14,16 +14,16 @@ public class UiItemInfo : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            SetEmpty();
-        }
+        //if (Input.GetKeyDown(KeyCode.Alpha1))
+        //{
+        //    SetEmpty();
+        //}
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            SetItem(SaveItemData.GetRandomItem());
-            Debug.Log("SetItem");
-        }
+        //if (Input.GetKeyDown(KeyCode.Alpha2))
+        //{
+        //    SetItem(SaveItemData.GetRandomItem());
+        //    Debug.Log("SetItem");
+        //}
     }
 
     public void SetEmpty()

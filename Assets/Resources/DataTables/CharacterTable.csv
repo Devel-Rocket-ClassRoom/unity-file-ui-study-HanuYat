@@ -1,6 +1,6 @@
-﻿Id,Name,Desc,Attack,Defence,Icon,NameLabel,DescLabel,AttackLabel,DefenceLabel
-Char1,Char1Name,Char1Desc,Char1Attack,Char1Defence,Icon_Char1,Char1NameLabel,Char1DescLabel,Char1AttackLabel,Char1DefenceLabel
-Char2,Char2Name,Char2Desc,Char2Attack,Char2Defence,Icon_Char2,Char2NameLabel,Char2DescLabel,Char2AttackLabel,Char2DefenceLabel
-Char3,Char3Name,Char3Desc,Char3Attack,Char3Defence,Icon_Char3,Char3NameLabel,Char3DescLabel,Char3AttackLabel,Char3DefenceLabel
-Char4,Char4Name,Char4Desc,Char4Attack,Char4Defence,Icon_Char4,Char4NameLabel,Char4DescLabel,Char4AttackLabel,Char4DefenceLabel
-Char5,Char5Name,Char5Desc,Char5Attack,Char5Defence,Icon_Char5,Char5NameLabel,Char5DescLabel,Char5AttackLabel,Char5DefenceLabel
+﻿Id,Type,Name,Desc,Attack,Defence,Icon,NameLabel,DescLabel,AttackLabel,DefenceLabel
+Char1,Melee,Char1Name,Char1Desc,Char1Attack,Char1Defence,Icon_Char1,Char1NameLabel,Char1DescLabel,Char1AttackLabel,Char1DefenceLabel
+Char2,Ranged,Char2Name,Char2Desc,Char2Attack,Char2Defence,Icon_Char2,Char2NameLabel,Char2DescLabel,Char2AttackLabel,Char2DefenceLabel
+Char3,Melee,Char3Name,Char3Desc,Char3Attack,Char3Defence,Icon_Char3,Char3NameLabel,Char3DescLabel,Char3AttackLabel,Char3DefenceLabel
+Char4,Melee,Char4Name,Char4Desc,Char4Attack,Char4Defence,Icon_Char4,Char4NameLabel,Char4DescLabel,Char4AttackLabel,Char4DefenceLabel
+Char5,Ranged,Char5Name,Char5Desc,Char5Attack,Char5Defence,Icon_Char5,Char5NameLabel,Char5DescLabel,Char5AttackLabel,Char5DefenceLabel

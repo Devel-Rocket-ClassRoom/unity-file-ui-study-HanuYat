@@ -11,7 +11,7 @@ public static class SaveLoadManager
         Encrypted // .dat
     }
 
-    public static SaveMode Mode { get; set; } = SaveMode.Encrypted;
+    public static SaveMode Mode { get; set; } = SaveMode.Text;
     public static int SaveDataVersion { get; } = 4;
 
     public static byte[] Encrypted;
@@ -32,6 +32,14 @@ public static class SaveLoadManager
         Formatting = Formatting.Indented,
         TypeNameHandling = TypeNameHandling.All
     };
+
+    static SaveLoadManager()
+    {
+        if (!Load())
+        {
+            Debug.LogError("로드 실패!");
+        }
+    }
 
     public static bool Save(int slot = 0)
     {
@@ -90,7 +98,7 @@ public static class SaveLoadManager
         var path = GetSavePath(slot);
         if (!File.Exists(path))
         {
-            return false;
+            return Save();
         }
 
         try

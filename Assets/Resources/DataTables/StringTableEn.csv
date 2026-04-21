@@ -56,6 +56,24 @@ Type,Type
 Desc,Desc
 Value,Value
 Cost,Cost
+Attack,Attack
+Defence,Defence
+None,None
 Weapon,Weapon
 Equip,Equip
 Consumable,Consumable
+UnConsumable,UnConsumable
+Save,Save
+Load,Load
+Add,Add
+Remove,Remove
+Melee,Melee
+Ranged,Ranged
+CreateItem,Create Item
+RemoveItem,Remove Item
+CreationTimeAscending,CreationTime Ascending
+CreationTimeDescending,CreationTime Descending
+NameAscending,Name Ascending
+NameDescending,Name Descending
+CostAscending,Cost Ascending
+CostDescending,Cost Descending

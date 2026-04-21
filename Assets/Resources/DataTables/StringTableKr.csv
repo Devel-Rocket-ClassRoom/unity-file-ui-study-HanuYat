@@ -56,6 +56,24 @@ Type,타입
 Desc,설명
 Value,가치
 Cost,가격
+Attack,공격력
+Defence,방어력
+None,없음
 Weapon,무기
 Equip,장비
 Consumable,소모품
+UnConsumable,비소모품
+Save,저장
+Load,불러오기
+CreateItem,아이템 생성
+RemoveItem,아이템 삭제
+Add,추가
+Remove,제거
+Melee,근접딜러
+Ranged,원거리딜러
+CreationTimeAscending,날짜(오름차순)
+CreationTimeDescending,날짜(내림차순)
+NameAscending,이름(오름차순)
+NameDescending,이름(내림차순)
+CostAscending,가격(오름차순)
+CostDescending,가격(내림차순)

@@ -23,4 +23,9 @@ public class SaveItemData
 
         return newItem;
     }
+
+    public override string ToString()
+    {
+        return $"{InstanceId} / {ItemData.StringName} / {CreationTime}";
+    }
 }

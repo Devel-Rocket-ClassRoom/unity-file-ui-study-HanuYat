@@ -12,8 +12,6 @@ public class ItemDataConverter : JsonConverter<ItemData>
 
     public override void WriteJson(JsonWriter writer, ItemData value, JsonSerializer serializer)
     {
-        writer.WriteStartObject();
         writer.WriteValue(value.Id);
-        writer.WriteEndObject();
     }
 }

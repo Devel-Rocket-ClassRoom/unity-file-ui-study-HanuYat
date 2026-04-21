@@ -9,7 +9,14 @@ public enum ItemTypes
 {
     Weapon,
     Equip,
-    Consumable
+    Consumable,
+    UnConsumable
+}
+
+public enum CharacterTypes
+{
+    Melee,
+    Ranged
 }
 
 public static class Variables

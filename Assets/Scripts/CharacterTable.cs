@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 // ID, 이름, 설명, 공격력, 캐릭터아이콘
@@ -8,6 +9,7 @@ using UnityEngine;
 public class CharacterData
 {
     public string Id { get; set; }
+    public CharacterTypes Type { get; set; }
     public string Name { get; set; }
     public string Desc { get; set; }
     public string Attack { get; set; }
@@ -20,6 +22,8 @@ public class CharacterData
 
     public string StringName => DataTableManager.StringTable.Get(Name);
     public string StringDesc => DataTableManager.StringTable.Get(Desc);
+    public string StringAttack => DataTableManager.StringTable.Get(Attack);
+    public string StringDefence => DataTableManager.StringTable.Get(Defence);
     public Sprite SPriteIcon => Resources.Load<Sprite>($"Icon/{Icon}");
 
     public override string ToString()
@@ -31,6 +35,7 @@ public class CharacterData
 public class CharacterTable : DataTable
 {
     private readonly Dictionary<string, CharacterData> table = new Dictionary<string, CharacterData>();
+    private List<string> keyList = new List<string>();
 
     public override void Load(string fileName)
     {
@@ -51,6 +56,8 @@ public class CharacterTable : DataTable
                 Debug.LogError($"캐릭터 아이디 중복: {character.Id}");
             }
         }
+
+        keyList = table.Keys.ToList();
     }
 
     public CharacterData Get(string id)
@@ -61,5 +68,10 @@ public class CharacterTable : DataTable
             return null;
         }
         return table[id];
+    }
+
+    public CharacterData GetRandom()
+    {
+        return Get(keyList[Random.Range(0, keyList.Count)]);
     }
 }
