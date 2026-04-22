@@ -38,6 +38,7 @@ public class ChangeLanguage : MonoBehaviour
         foreach (var text in texts)
         {
             text.editorLang = Languages.Korean;
+            Variables.Language = Languages.Korean;
             text.OnChangedId();
             text.OnChangedLang(Languages.Korean);
         }
@@ -45,6 +46,7 @@ public class ChangeLanguage : MonoBehaviour
         foreach (var dropDown in dropDowns)
         {
             dropDown.editorLang = Languages.Korean;
+            Variables.Language = Languages.Korean;
             dropDown.OnChangeLanguage(dropDown.editorLang);
         }
     }
@@ -54,6 +56,7 @@ public class ChangeLanguage : MonoBehaviour
         foreach (var text in texts)
         {
             text.editorLang = Languages.Japanese;
+            Variables.Language = Languages.Japanese;
             text.OnChangedId();
             text.OnChangedLang(Languages.Japanese);
         }
@@ -61,6 +64,8 @@ public class ChangeLanguage : MonoBehaviour
         foreach (var dropDown in dropDowns)
         {
             dropDown.editorLang = Languages.Japanese;
+            Variables.Language = Languages.Japanese;
+            dropDown.OnChangeLanguage(Languages.Japanese);
         }
     }
 
@@ -70,6 +75,7 @@ public class ChangeLanguage : MonoBehaviour
         foreach (var text in texts)
         {
             text.editorLang = Languages.English;
+            Variables.Language = Languages.English;
             text.OnChangedId();
             text.OnChangedLang(Languages.English);
         }
@@ -77,6 +83,8 @@ public class ChangeLanguage : MonoBehaviour
         foreach (var dropDown in dropDowns)
         {
             dropDown.editorLang = Languages.English;
+            Variables.Language = Languages.English;
+            dropDown.OnChangeLanguage(Languages.English);
         }
     }
 }

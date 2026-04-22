@@ -100,7 +100,7 @@ MonoBehaviour:
   sorting: {fileID: 6903857990357143686}
   filtering: {fileID: 5255151303549535220}
   language: {fileID: 3673048967534921699}
-  uiInvenSlotList: {fileID: 7061227110678923069}
+  uiInvenSlotList: {fileID: 0}
 --- !u!114 &8955449039458621826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -729,9 +729,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5424942473791989162, guid: 3eafd4e8f28f4f149afa35c49c330c2d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 890803895074924126}
-    - targetCorrespondingSourceObject: {fileID: 5424942473791989162, guid: 3eafd4e8f28f4f149afa35c49c330c2d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7061227110678923069}
   m_SourcePrefab: {fileID: 100100000, guid: 3eafd4e8f28f4f149afa35c49c330c2d, type: 3}
 --- !u!224 &3538077315372481745 stripped
 RectTransform:
@@ -744,27 +741,6 @@ GameObject:
   m_PrefabInstance: {fileID: 3314262534243704100}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &890803895074924126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7401635582985091214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7431aad4e6dfac4e812a9d65b5da191, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UiInvenSlotList
-  onUpdateSlots:
-    m_PersistentCalls:
-      m_Calls: []
-  onSelectSlot:
-    m_PersistentCalls:
-      m_Calls: []
-  prefab: {fileID: 5341017646755473343, guid: c277fd474e81f4540ba346ea222e544a, type: 3}
-  uiItemInfo: {fileID: 3814333833062945562, guid: 45741104de59c574a835008628b047d2, type: 3}
-  scrollRect: {fileID: 8465074789491032767}
---- !u!114 &7061227110678923069
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

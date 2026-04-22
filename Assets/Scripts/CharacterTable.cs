@@ -20,6 +20,7 @@ public class CharacterData
     public string AttackLabel { get; set; }
     public string DefenceLabel { get; set; }
 
+    public string StringType => DataTableManager.StringTable.Get(Type.ToString());
     public string StringName => DataTableManager.StringTable.Get(Name);
     public string StringDesc => DataTableManager.StringTable.Get(Desc);
     public string StringAttack => DataTableManager.StringTable.Get(Attack);

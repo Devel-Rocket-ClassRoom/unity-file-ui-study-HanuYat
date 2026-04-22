@@ -7,7 +7,6 @@ public class UiPanelInventory : MonoBehaviour
 {
     public TMP_Dropdown sorting;
     public TMP_Dropdown filtering;
-    public TMP_Dropdown language;
 
     public UiInvenSlotList uiInvenSlotList;
 
@@ -26,11 +25,6 @@ public class UiPanelInventory : MonoBehaviour
     public void OnChangeFiltering(int index)
     {
         uiInvenSlotList.Filtering = (UiInvenSlotList.FilteringOptions)index;
-    }
-
-    public Languages GetLanguages(int index)
-    {
-        return (Languages)index;
     }
 
     public void OnSave()

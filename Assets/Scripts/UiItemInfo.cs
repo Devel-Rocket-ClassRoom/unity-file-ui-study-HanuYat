@@ -12,20 +12,6 @@ public class UiItemInfo : MonoBehaviour
     public TextMeshProUGUI itemValue;
     public TextMeshProUGUI itemCost;
 
-    private void Update()
-    {
-        //if (Input.GetKeyDown(KeyCode.Alpha1))
-        //{
-        //    SetEmpty();
-        //}
-
-        //if (Input.GetKeyDown(KeyCode.Alpha2))
-        //{
-        //    SetItem(SaveItemData.GetRandomItem());
-        //    Debug.Log("SetItem");
-        //}
-    }
-
     public void SetEmpty()
     {
         itemIcon.sprite = null;
@@ -41,7 +27,7 @@ public class UiItemInfo : MonoBehaviour
         var data = saveItemData.ItemData;
 
         itemIcon.sprite = data.SPriteIcon;
-        itemType.text = string.Concat($"{DataTableManager.StringTable.Get("Type")}: ", data.Type.ToString().ToUpper());
+        itemType.text = string.Concat($"{DataTableManager.StringTable.Get("Type")}: ", data.StringType);
         itemName.text = string.Concat($"{DataTableManager.StringTable.Get("Name")}: ", data.StringName);
         itemDesc.text = string.Concat($"{DataTableManager.StringTable.Get("Desc")}: ", data.StringDesc);
         itemValue.text = string.Concat($"{DataTableManager.StringTable.Get("Value")}: ", data.Value.ToString());

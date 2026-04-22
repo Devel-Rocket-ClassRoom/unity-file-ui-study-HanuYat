@@ -27,11 +27,6 @@ public class UiCharInventory : MonoBehaviour
         uiCharSlotList.Filtering = (UiCharSlotList.FilteringOptions)index;
     }
 
-    public Languages GetLanguages(int index)
-    {
-        return (Languages)index;
-    }
-
     public void OnSave()
     {
         SaveLoadManager.Data.CharList = uiCharSlotList.GetSaveCharDataList();

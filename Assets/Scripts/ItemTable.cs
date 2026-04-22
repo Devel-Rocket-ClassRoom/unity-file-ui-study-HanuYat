@@ -12,6 +12,8 @@ public class ItemData
     public int Value { get; set; }
     public int Cost { get; set; }
     public string Icon { get; set; }
+
+    public string StringType => DataTableManager.StringTable.Get(Type.ToString());
     public string StringName => DataTableManager.StringTable.Get(Name);
     public string StringDesc => DataTableManager.StringTable.Get(Desc);
     public Sprite SPriteIcon => Resources.Load<Sprite>($"Icon/{Icon}");

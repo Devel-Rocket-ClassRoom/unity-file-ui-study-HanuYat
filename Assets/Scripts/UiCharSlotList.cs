@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class UiCharSlotList : MonoBehaviour
@@ -42,6 +43,7 @@ public class UiCharSlotList : MonoBehaviour
 
     public UnityEvent onUpdateSlots;
     public UnityEvent<SaveCharData> onSelectSlot;
+    public UnityEvent<SaveCharData> onDeSelectSlot;
 
     public UiCharSlot prefab;
     public UiCharInfo uiCharInfo;
@@ -87,6 +89,7 @@ public class UiCharSlotList : MonoBehaviour
     private void Start()
     {
         onSelectSlot.AddListener(OnSelectSlot);
+        onDeSelectSlot.AddListener(OnDeSelectSlot);
     }
 
     public void SetSaveCharDataList(List<SaveCharData> source)
@@ -104,6 +107,11 @@ public class UiCharSlotList : MonoBehaviour
     {
         uiCharInfo.SetItem(data);
         Debug.Log(data);
+    }
+
+    private void OnDeSelectSlot(SaveCharData data)
+    {
+        uiCharInfo.SetEmpty();
     }
 
     private void UpdateSlots()
