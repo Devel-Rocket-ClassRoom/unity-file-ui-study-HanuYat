@@ -77,3 +77,5 @@ NameAscending,名前昇順
 NameDescending,名前降順
 CostAscending,コスト上昇
 CostDescending,コストダウン
+AttackAscending,攻撃上昇
+AttackDescending,攻撃降下
